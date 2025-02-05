@@ -13,9 +13,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
-        className={`w-screen min-h-screen overflow-x-hidden flex flex-col ${dmSans.className} `}
+        className={`w-full min-h-screen overflow-x-hidden flex flex-col ${dmSans.className} `}
       >
         {<HeadBar />}
         {<Header />}
