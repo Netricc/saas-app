@@ -2,6 +2,7 @@ import Image from "next/image";
 import { LogoSaas1 } from "@/public/images";
 import { navLinks, socialLinks } from "@/constants";
 import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="w-full bg-black flex justify-center items-center py-[40px] px-[80px] ">
