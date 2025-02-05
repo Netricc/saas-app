@@ -8,12 +8,12 @@ import { arrowRight2 } from "@/public/icons";
 const Hero = () => {
   return (
     <div className="h-screen w-full hero-bg overflow-x-hidden">
-      <section className="h-full w-full container-grid-component flex items-center justify-between relative">
-        <div>
+      <section className="h-full w-full  container-grid-component flex items-center justify-between relative">
+        <div className=" z-20">
           <span className="text-[14px] cursor-pointer hover:text-white duration-200 text-slate-900 border border-solid border-slate-300 px-[12px] py-[4px] rounded-[8px]  font-medium">
             Version 2.0 is here
           </span>
-          <h1 className="mt-[42px] text-[72px] font-bold leading-[72px] hero-title">
+          <h1 className="mt-[42px] text-[72px] font-bold leading-[72px] hero-title max-md:text-[60px] max-sm:text-[46px]">
             Pathway to <br /> ProDuctivity
           </h1>
           <p className="w-[478px] max-sm:w-full mt-[32px] text-[20px] text-[#010D3E] ">
@@ -37,20 +37,18 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full h-full absolute translate-x-[50%]">
-          <Image
-            className="absolute top-2 left-0"
-            src={cylinder}
-            alt="cylinder"
-            width={220}
-          ></Image>
-          <Image
-            className="absolute tralsat translate-y-[20%] translate-x-[30%]"
-            src={heroImage1}
-            width={648}
-            alt="hero Image"
-          ></Image>
-        </div>
+        <Image
+          className="absolute top-[100px] left-[50%]"
+          src={cylinder}
+          alt="cylinder"
+          width={220}
+        ></Image>
+        <Image
+          className="absolute top-[30%] left-[60%]"
+          src={heroImage1}
+          width={648}
+          alt="hero Image"
+        ></Image>
       </section>
     </div>
   );
