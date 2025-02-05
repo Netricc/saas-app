@@ -7,7 +7,7 @@ import { heroImage1, cylinder, halfTorus } from "@/public/images";
 import { arrowRight2 } from "@/public/icons";
 const Hero = () => {
   return (
-    <div className="h-screen w-full hero-bg">
+    <div className="h-screen w-full hero-bg overflow-x-hidden">
       <section className="h-full w-full container-grid-component flex items-center justify-between relative">
         <div>
           <span className="text-[14px] cursor-pointer hover:text-white duration-200 text-slate-900 border border-solid border-slate-300 px-[12px] py-[4px] rounded-[8px]  font-medium">
